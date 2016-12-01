@@ -74,7 +74,6 @@ a img{
 
 .slideBox {
   width:  100%;
- 
   height: 486px;
   overflow: hidden;
   position: relative;
@@ -497,7 +496,7 @@ a img{
 }
 
 .con_banner{
-	background: url(../images/carrier_ban.jpg) no-repeat;
+	background: url(../images/carrier_ban.jpg) top center no-repeat;
 	height:221px;
 }
 

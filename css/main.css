@@ -745,9 +745,7 @@ a img{
 
 
 .sma_banner img{
-	/*background: url(../images/sma1.jpg) top center no-repeat;*/
 	display: block;
-	
 	width:1000px;
 	margin:0 auto;
 	height:221px;

@@ -164,7 +164,10 @@ a img{
   height: 486px;
   display: block;
 }
-
+.new_{
+	height:116px;
+	padding:0 20px;
+}
 .new{
 	height:116px;
 	position: relative;
@@ -811,4 +814,10 @@ a img{
 	margin-top:1000px;
 	left:370px;
 	top:-999px;
+}
+
+
+.Header{
+	width:100%;
+	height:400px;
 }

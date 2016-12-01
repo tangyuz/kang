@@ -62,3 +62,36 @@ jQuery(".focusBox").slide({
   }
   
   
+  
+  
+  if(/rem/.test(location.href)){
+  	$("#header").load("head.html",function(){
+  		
+  	})
+  	
+  	$(".footer").load("footer.html",function(){
+  		
+  	})
+  }
+  
+  if(/coo/.test(location.href)){
+  	$("#header").load("head.html",function(){
+  		
+  	})
+  	
+  	$(".footer").load("footer.html",function(){
+  		
+  	})
+  }
+  
+  if(/sma/.test(location.href)){
+  	$("#header").load("head.html",function(){
+  		
+  	})
+  	
+  	$(".footer").load("footer.html",function(){
+  		
+  	})
+  }
+  
+  

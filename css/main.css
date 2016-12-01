@@ -1,6 +1,543 @@
-#header{
+			
+body,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dd,dt,input,p,img,a{padding:0;margin:0;}
+
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+	height:1543px;
+	
+}
+.w{
 	width:1000px;
-	height: 100px;
-	background: red;
 	margin:0 auto;
 }
+.l{
+	float:left;
+}
+.r{
+	float:right;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	
+}
+ul,li{
+	list-style: none;
+}
+a img{
+	border:0;
+}
+.pa{
+	position: absolute;
+}
+#header {
+	height:80px;
+}
+#header .logo{
+	margin-top: 5px;
+	width: 117px;
+    height: 61px;
+}
+#header .nav{
+	margin-top:28px;
+}
+.nav a{
+	color: #222;
+    font-size: 14px;
+    line-height: 29px;
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin-right: 35px;
+    cursor: pointer;
+}
+.nav .loading{
+	margin-right: 24px;
+    width: 29px;
+    height: 29px;
+    background: url(../images/nav_pic.png) left center no-repeat;
+}
+.nav a.last{
+	margin-right: 0;
+}
+.banner{
+	width:100%;
+	height: 468px;
+	background: red;
+}
+
+
+
+
+
+.slideBox {
+  width:  100%;
+ 
+  height: 486px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.slideBox .hd {
+  height: 32px;
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  width: 100%;
+}
+.slideBox .hd ul {
+  overflow: hidden;
+  zoom: 1;
+  float: left;
+  margin-left: 50%;
+}
+
+.slideBox .hd ul li {
+  float: left;
+  margin-right: 4px;
+  width: 50px;
+  height: 3px;
+  /*line-height: 14px;*/
+  text-align: center;
+  /*background: #fff;*/
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  background:#d8d8d8;
+}
+
+.slideBox .hd ul li.on {
+  background: #888;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.slideBox .bd {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+
+.slideBox .bd li {
+  zoom: 1;
+  vertical-align: middle;
+}
+
+.slideBox .bd img {
+  width: 100%
+  height: 486px;
+  display: block;
+}
+
+.new{
+	height:116px;
+	position: relative;
+	
+}
+.name{
+	font-size: 15px;
+	margin-top: 50px;
+	float:left;
+	color:#004679;
+}
+.name:after{
+	width: 900px;
+    height: 0;
+    border-bottom: 2px solid #004679;
+    position: absolute;
+    top: 63px;
+    right:0;
+    content: '';
+    display: block;
+}
+
+
+
+
+
+
+
+
+ .news {
+  height:240px;
+  font-family: "微软雅黑";
+  position: relative;
+  margin-bottom: 92px;
+}
+
+ .news .new_more {
+  width: 100px;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
+ .news .new_more span {
+  display: inline-block;
+  position: relative;
+  right: 0;
+}
+
+ .news .new_more span:after,.jump .news .new_more span:before {
+  width: 10px;
+  height: 0;
+  border-bottom: 1px solid #ddd;
+  position: absolute;
+  top: 8px;
+  content: '';
+  display: block
+}
+
+ .news .new_more span:before {
+  left: -20px;
+}
+
+ .news .new_more span:after {
+  right: -20px;
+}
+
+ .news .new_more a {
+  color: #ddd
+}
+
+ .news a {
+  color: #444;
+}
+
+ .news a:hover {
+  color: #095aad;
+}
+
+ .news .left {
+  /*width: 378px;*/
+  width: 410px;
+}
+
+ .news .right {
+  /*width: 599px;*/
+  width: 540px;
+}
+
+
+.focusBox {
+  position: relative;
+  width: 378px;
+  height: 240px;
+  overflow: hidden;
+  text-align: left;
+  background: #fff;
+}
+
+.focusBox .pic img {
+  width: 378px;
+  height: 240px;
+  display: block;
+}
+
+.focusBox .txt-bg {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  height: 36px;
+  width: 100%;
+  background: #333;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.focusBox .txts {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  height: 36px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.focusBox .txts li {
+  height: 36px;
+  line-height: 36px;
+  position: absolute;
+  bottom: -36px;
+}
+
+.focusBox .txts li a {
+  display: block;
+  color: #fff;
+  padding: 0 0 0 10px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.focusBox .num {
+  position: absolute;
+  z-index: 3;
+  bottom: 14px;
+  right: 8px;
+}
+
+.focusBox .num li {
+  float: left;
+  position: relative;
+  width: 6px;
+  height: 6px;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.focusBox .num li.on {
+  background: #fff;
+}
+.more-about-us {
+  display: none;
+  width: 160px;
+  height: 40px;
+  background-color: #e84c3d;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+ .news .news_l_list {
+  padding-top: 10px;
+}
+
+ .news .news_l_list li {
+  width: 378px;
+  padding-left: 10px;
+  line-height: 30px;
+  background: url(../images/dian.png) left center no-repeat;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+ .news .news_l_list li a {
+  font-size: 16px;
+}
+
+ .news .right h5 {
+  font-size: 18px;
+}
+
+ .news .right p {
+  font-size: 14px;
+  line-height: 26px;
+  padding: 6px 0;
+}
+
+ .news .right ul {
+  /*border-top: 1px dotted #ddd;*/
+}
+
+ .news .right li {
+  color: #444;
+  padding-left: 10px;
+  line-height: 30px;
+  background: url(../images/dian.png) left center no-repeat;
+}
+
+ .news .right .more-new {
+  color: #2d3e50;
+  text-align: right;
+  background: none;
+  line-height: initial;
+  margin-bottom: 10px;
+}
+ .news .right .more-new a {
+  font-size: 12px;
+}
+
+ .news .right li a {
+  font-size: 16px;
+}
+
+ .news .right li a:hover {
+  color: #095aad;
+}
+
+ .news .right .datas {
+  float: right;
+  font-size: 14px;
+}
+
+.cont1{
+	height:340px;
+	
+}
+.cont1 li{
+	width: 249px;
+    border-right: 1px solid #e4e4e4;
+    height: 296px;
+}
+.cont1 li .pic{
+	width: 122px;
+    height: 85px;
+    margin: 22px auto 0;
+    background: center no-repeat
+}
+.cont1 li:nth-child(1) .pic{
+	background: url(../images/in_pic1.png) no-repeat;
+}
+.cont1 li:nth-child(2) .pic{
+	background: url(../images/in_pic2.png) no-repeat;
+}
+.cont1 li:nth-child(3) .pic{
+	background: url(../images/in_pic3.png) no-repeat;
+}
+.cont1 li:nth-child(4) .pic{
+	background: url(../images/in_pic4.png) no-repeat;
+}
+.cont1 li:nth-child(1) .pic:hover{
+	background: url(../images/in_pic1a.png) no-repeat;
+}
+.cont1 li:nth-child(2) .pic:hover{
+	background: url(../images/in_pic2a.png) no-repeat;
+}
+.cont1 li:nth-child(3) .pic:hover{
+	background: url(../images/in_pic3a.png) no-repeat;
+}
+.cont1 li:nth-child(4) .pic:hover{
+	background: url(../images/in_pic4a.png) no-repeat;
+}
+.cont1 li h3 a{
+	color:#666;
+}
+.cont1 li h3{
+	text-align: center;
+    font-weight: bold;
+    margin: 35px 0 25px;
+    position: relative;
+    line-height: 16px;
+}
+.cont1 li .text{
+	width: 140px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    margin: 0 auto;
+    color: #a1a1a1;
+    line-height: 18px;
+}
+
+.footer{
+	background:#e8e8e8;
+}
+.footer .foot_box{
+	padding-top: 35px;
+    height: 174px;
+    font-size: 14px;
+    color: #727272;
+    line-height: 30px;
+}
+
+
+.footer .foot_box .left{
+	width: 488px;
+    text-align: center;
+}
+.right dt{
+	width: 68px;
+}
+.right dd{
+	width: 420px;
+}
+.wenzi:hover{
+	color:#3287c5;
+}
+
+.er_banner{
+	background:url(../images/about_ban.jpg) ;
+	height:221px;
+	
+}
+.er_warper{
+	height:2500px;
+}
+.about{
+	color: #333;
+    font-family: Verdana;
+}
+.about h1{
+	font-size: 30px;
+    line-height: 34px;
+    padding: 62px 0 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about .count{
+	padding: 32px 36px 36px;
+    border-top: 1px solid #222;
+}
+.about .count h3.title{
+	font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.about .count .txt {
+	font-size: 16px;
+    line-height: 25px;
+}
+.about .count .txt p{
+	text-indent: 2em;
+	text-align: justify;
+}
+
+.con_banner{
+	background: url(../images/carrier_ban.jpg) no-repeat;
+	height:221px;
+}
+
+.con_wraper{
+	height:3000px;
+}
+
+.con_about{
+	color: #333;
+    font-family: Verdana;
+    height:3000px;
+}
+
+.con_about h1{
+	font-size: 30px;
+    line-height: 34px;
+    padding: 62px 0 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.con_about .cont2{
+	border-top:1px solid #ccc;
+}
+
+.con_about .txt {
+	font-size: 16px;
+    line-height: 25px;
+}
+.con_about .txt p{
+	text-indent: 2em;
+	text-align: justify;
+}
+
+
+
+.con_about .cont2 h3.title{
+	font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+

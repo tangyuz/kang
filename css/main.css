@@ -506,10 +506,16 @@ a img{
 }
 
 .er_banner{
-	background:url(../images/about_ban.jpg) top center no-repeat ;
+	/*//background:url(../images/about_ban.jpg) top center no-repeat ;*/
 	height:221px;
 	width:100%;
 	
+}
+.er_banner img{
+	width:1000px;
+	height:221px;
+	margin:0 auto;
+	display: block;
 }
 .er_warper{
 	height:2500px;
@@ -546,9 +552,17 @@ a img{
 }
 
 .con_banner{
-	background: url(../images/carrier_ban.jpg) top center no-repeat;
+	/*background: url(../images/carrier_ban.jpg) top center no-repeat;*/
 	height:221px;
 	width:100%;
+}
+
+.con_banner img{
+	
+	height:221px;
+	width:1000px;
+	margin:0 auto;
+	display: block;
 }
 
 .con_wraper{
@@ -598,9 +612,17 @@ a img{
 }
 
 .rem_banner{
-	background: url(../images/rem1.jpg) top center no-repeat;
+	/*background: url(../images/rem1.jpg) top center no-repeat;*/
 	height:221px;
 	width:100%;
+}
+
+.rem_banner img{
+	
+	height:221px;
+	width:1000px;
+	margin:0 auto;
+	display: block;
 }
 
 
@@ -654,12 +676,17 @@ a img{
 }
 
 .coo_banner{
-	background: url(../images/coo1.jpg) top center no-repeat;
+	/*background: url(../images/coo1.jpg) top center no-repeat;*/
 	width:100%;
 	height:221px;
 }
 
-
+.coo_banner img{
+	display: block;
+	margin:0 auto;
+	width:1000px;
+	height:221px;
+}
 .coo_wraper{
 	height:2300px;
 }
@@ -712,8 +739,18 @@ a img{
 
 
 .sma_banner{
-	background: url(../images/sma1.jpg) top center no-repeat;
+	/*background: url(../images/sma1.jpg) top center no-repeat;*/
 	width:100%;
+	height:221px;
+}
+
+
+.sma_banner img{
+	/*background: url(../images/sma1.jpg) top center no-repeat;*/
+	display: block;
+	
+	width:1000px;
+	margin:0 auto;
 	height:221px;
 }
 

@@ -5,6 +5,7 @@ body{
 	font-size: 12px;
 	font-family: "微软雅黑";
 	height:1543px;
+	min-width: 1000px;
 	
 }
 .w{
@@ -562,14 +563,13 @@ a img{
 }
 
 .con_banner{
-	
 	height:221px;
 	width:100%;
 }
 
 .con_banner img{
 	height:221px;
-	width:1000px;
+	width:100%;
 	margin:0 auto;
 	display: block;
 }
@@ -636,7 +636,7 @@ a img{
 
 .rem_banner img{
 	height:221px;
-	width:1000px;
+	width:100%;
 	margin:0 auto;
 	display: block;
 }
@@ -748,7 +748,7 @@ a img{
 .coo_banner img{
 	display: block;
 	margin:0 auto;
-	width:1000px;
+	width:100%;
 	height:221px;
 }
 .coo_wraper{
@@ -1116,7 +1116,7 @@ a img{
 
 .sma_banner img{
 	display: block;
-	width:1000px;
+	width:100%;
 	margin:0 auto;
 	height:221px;
 }

@@ -1,5 +1,5 @@
-
-  	 if(/index/.test(location.href)){
+$(function(){
+	 if(/index/.test(location.href)){
   
   		$("#header").load("head.html",function(){
 			})
@@ -132,5 +132,7 @@ $(function() {
   }
   
   
+})
+  	
  
   

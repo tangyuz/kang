@@ -83,7 +83,7 @@ a img{
 
 
 .slideBox {
-  width:1000px;
+  width:100%;
   margin:auto;
   height: 486px;
   overflow: hidden;
@@ -139,7 +139,7 @@ a img{
   vertical-align: middle;
 }
 
-.slideBox .bd li:nth-child(1){
+/*.slideBox .bd li:nth-child(1){
 	background: url(../images/banner.png) top center no-repeat;
 	height:446px;
 	width:1000px;
@@ -161,7 +161,7 @@ a img{
 	width:1000px;
 	margin:auto;
 	
-}
+}*/
 
 .slideBox .bd img {
   width: 100%;

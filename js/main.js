@@ -1,6 +1,7 @@
   
   if(/index/.test(location.href)){
-		$("#header").load("head.html",function(){
+  	$(document).ready(function(){
+  		$("#header").load("head.html",function(){
 		})
   	
   	$(".footer").load("footer.html",function(){
@@ -25,6 +26,8 @@
 		        });
 		    }
 		});
+  	})
+		
 }
   
   if(/aboutus/.test(location.href)){

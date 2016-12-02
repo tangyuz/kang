@@ -2,10 +2,10 @@
   	 if(/index/.test(location.href)){
   
   		$("#header").load("head.html",function(){
-		})
+			})
   	
-  	$(".footer").load("footer.html",function(){
-  	})
+	  	$(".footer").load("footer.html",function(){
+	  	})
   	
  
   	$(".slideBox").slide({

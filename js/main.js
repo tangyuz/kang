@@ -1,4 +1,4 @@
-  $(function(){
+
   	 if(/index/.test(location.href)){
   	alert(1)
   		$("#header").load("head.html",function(){
@@ -131,6 +131,6 @@ $(function() {
   	})
   }
   
-  })
+  
  
   

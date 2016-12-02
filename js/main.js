@@ -1,13 +1,13 @@
 
   	 if(/index/.test(location.href)){
-  	alert(1)
+  
   		$("#header").load("head.html",function(){
 		})
   	
   	$(".footer").load("footer.html",function(){
   	})
   	
-  	alert(2)
+ 
   	$(".slideBox").slide({
     	mainCell: ".bd ul",
     	autoPlay: true

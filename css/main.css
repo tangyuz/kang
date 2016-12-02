@@ -281,6 +281,7 @@ a img{
   width: 378px;
   height: 240px;
   display: block;
+  float:left;
 }
 
 .focusBox .txt-bg {
@@ -520,7 +521,7 @@ a img{
 	
 }
 .er_banner img{
-	width:1000px;
+	width:100%;
 	height:221px;
 	margin:0 auto;
 	display: block;
@@ -597,7 +598,7 @@ a img{
 }
 
 .pic{
-	margin-left: 153px;
+	/*margin-left: 153px;*/
 	margin-top: 30px;
 }
 .pic1{

@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	if(/index/.test(location.href)){
-  
+  	
   		$("#header").load("head.html",function(){
 			})
   	

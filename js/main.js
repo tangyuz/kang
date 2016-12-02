@@ -6,7 +6,7 @@ $(document).ready(function(){
   	
 	  	$(".footer").load("footer.html",function(){
 	  	})
-  	alert(1)
+  	
  
   	$(".slideBox").slide({
     	mainCell: ".bd ul",

@@ -121,8 +121,7 @@ $(function() {
   	})
   }
   
-  if(/news/.test(location.href)){
-  	
+  if(/newdatil/.test(location.href)){
   	$("#header").load("head.html",function(){
   		
   	})
@@ -130,51 +129,78 @@ $(function() {
   	$(".footer").load("footer.html",function(){
   		
   	})
+  	var dataId=sessionStorage.getItem("dataid")
+  	$.ajax(
+			{
+				type:"get",
+				url:"data/data.json",
+				async:true,
+				datatype:"json",
+				success:function(mag){
+					var data=mag.data;
+					var str='';
+					for(var i in data){
+						if(dataId===data[i].id){
+							str+='<h2>'+data[i].title+'</h2>'
+				       		str+='<div class="img">'
+				       		str+='<img src="'+data[i].img+'" alt="" />'
+				       		str+='</div>'
+				       		str+='<div class="news_d">'
+				       		str+='<p>'+data[i].name1+'</p>'
+				       		str+='<p>'+data[i].name2+'</p>'
+				       		str+='<p>'+data[i].name3+'</p>'
+       
+       		
+       		
+						}
+											
+					}
+					$(".new_detail").append(str);
+				}
+			}
+	)
+  	
+  }
+  
+  if(/news/.test(location.href)){
+  	
+  	$("#header").load("head.html",function(){
+  	})
+  	
+  	$(".footer").load("footer.html",function(){
+  	})
   	
   	
   	$(".slideBox_new").slide({
-	mainCell: ".bd ul",
-	autoPlay: true
+		mainCell: ".bd ul",
+		autoPlay: true
 	});
   	$.ajax(
-				{
-					type:"get",
-					url:"data/data.json",
-					async:true,
-					datatype:"json",
-					success:function(mag){
-						var data=mag.data;
-						var str='';
-						for(var i in data){
-							str+='<li><a class="eliplis" href="javascript:;" dataid="'+data[i].id+'">'+data[i].name+'</a><span>'+data[i].time+'</span></li>'
-							
-							
-							
-//							str+='<div class="l yi">'
-//							str+='<a dataid="'+data[i].id+'" class="atu" href="javascript:;"><img  src="'+data[i].img+'"/></a>'
-//							str+='<a class="a2" dataid="'+data[i].id+'"  href="javascript:;">'+data[i].name+'</a>'
-//							str+='<div class="di">'
-//							str+='<p class="l p1">'+data[i].name1+'</p>'
-//							str+='<p class="l p2">'+data[i].name2+'</p>'
-//							str+='</div>'
-//							str+='<div class="shu">'
-//							str+=data[i].id		
-//							str+='</div>'	
-//							str+='<a dataid="'+data[i].id+'" class="a3" href="javascript:;"><img src="'+data[0].img1+'"/></a>'
-//							str+='</div>'	
-							
-						}
-						$(".ul1").append(str);
-						
-						
-						
-						
+			{
+				type:"get",
+				url:"data/data.json",
+				async:true,
+				datatype:"json",
+				success:function(mag){
+					var data=mag.data;
+					var str='';
+					for(var i in data){
+						str+='<li><a class="datil" href="javascript:;" dataid="'+data[i].id+'">'+data[i].name+'</a><span>'+data[i].time+'</span></li>'							
 					}
-					
-					
+					$(".ul1").append(str);
 				}
+			}
 	)
-  }
+  	
+  	
+  	
+  	//***********跳转新闻详情页***************
+			$(".List").on("click",".datil",function(){
+					var dataid=$(this).attr("dataid");
+					sessionStorage.setItem("dataid",dataid)
+					window.location.href="newdatil.html"	
+			})
+}
 
 
 	

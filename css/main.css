@@ -396,7 +396,7 @@ a img{
   font-size: 14px;
 }
 .in_wraper{
-	height:350px;
+	height:390px;
 }
 .cont1{
 	height:340px;
@@ -413,6 +413,10 @@ a img{
     height: 85px;
     margin: 22px auto;
     
+}
+
+.cont1 li.l_lasst{
+	border:0;
 }
 
 .cont1 li .pic a{
@@ -646,7 +650,7 @@ a img{
 	line-height: 26px;
 	width:477px;
 	text-align:justify;
-	margin-left:30px;
+	margin-left: 15px;
 	font-family: verdana;
 	height:140px;
 	color:#444;
@@ -718,7 +722,7 @@ a img{
 	display: block;
 }
 .er_warper{
-	height:2500px;
+	height:2400px;
 
 }
 .about{
@@ -752,6 +756,15 @@ a img{
 	text-align: justify;
 }
 
+.about .b_t{
+	border:0;
+	padding:0;
+}
+
+.about .count .txt p.t_i{
+	text-indent: 0;
+}
+
 .con_banner{
 	height:221px;
 	width:100%;
@@ -765,13 +778,16 @@ a img{
 }
 
 .con_wraper{
-	height:3000px;
+	height:2970px;
 }
 
 .con_about{
 	color: #333;
     font-family: Verdana;
     height:3000px;
+}
+.con_about .img1{
+	width:1000px;
 }
 
 .con_about h1{
@@ -787,8 +803,8 @@ a img{
 	padding: 32px 36px 36px;
 }
 
-.pic{
-	/*margin-left: 153px;*/
+.con_about .cont2 .pic{
+	margin-left: 153px;
 	margin-top: 30px;
 }
 .pic1{
@@ -833,7 +849,7 @@ a img{
 
 
 .rem_wraper{
-	height:2450px;
+	height:2370px;
 }
 
 .rem_about{
@@ -845,7 +861,7 @@ a img{
 .rem_about h1{
 	font-size: 30px;
     line-height: 34px;
-    padding: 62px 0 45px;
+    padding-top:53px;
     font-weight: bold;
     text-align: center;
 }
@@ -866,6 +882,9 @@ a img{
 
 .rem_about .cont3 .wenzi{
 	width:846px;
+}
+.rem_about .cont3 .wenz .img2{
+	margin-top: 60px;
 }
 
 .rem_about .cont3 .wenz {
@@ -942,13 +961,13 @@ a img{
 	height:221px;
 }
 .coo_wraper{
-	height:2250px;
+	height:2240px;
 }
 
 .coo_about{
 	color: #333;
     font-family: Verdana;
-    height:2500px;
+    height:2240px;
 }
 
 
@@ -1006,7 +1025,6 @@ a img{
   top: 0;
   left: 50%;
   margin-left: -33px;
-  background: url(../images/yipu_title.png) no-repeat
 }
 
 .ruwangyiyuan img {
@@ -1313,7 +1331,7 @@ a img{
 
 
 .sma_wraper{
-	height:2637px;
+	height:2585px;
 }
 
 .sma_about{
@@ -1326,14 +1344,13 @@ a img{
 .sma_about h1{
 	font-size: 30px;
     line-height: 34px;
-    padding: 62px 0 45px;
+    padding-top: 56px;
     font-weight: bold;
     text-align: center;
 }
 
 
 .sma_about .cont2{
-	border-top:1px solid #ccc;
 	padding: 32px 36px 36px;
 }
 

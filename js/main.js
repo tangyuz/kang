@@ -1,7 +1,6 @@
 
 $("#header").load("head.html",function(){
-	})
-
+})
 $(".footer").load("footer.html",function(){
 })
 
@@ -74,13 +73,13 @@ $(".footer").load("footer.html",function(){
   		
   	})
   	
-  	 $("#capslide_img_cont").capslide({
-        caption_color: 'white',
-        caption_bgcolor: 'black',
-        overlay_bgcolor: 'black',
-        border: '',
-        showcaption: false
-    });
+//	 $("#capslide_img_cont").capslide({
+//      caption_color: 'white',
+//      caption_bgcolor: 'black',
+//      overlay_bgcolor: 'black',
+//      border: '',
+//      showcaption: false
+//  });
     $(".move").mouseover(function(){
     	$(this).find(".pc").stop(true).slideDown();
     })
@@ -98,7 +97,6 @@ $(".ruwangyiyuan").slide({
 });
 
 
-$(function() {
     $(".ic_container").capslide({
         caption_color: 'white',
         caption_bgcolor: 'black',
@@ -106,7 +104,7 @@ $(function() {
         border: '',
         showcaption: false
     });
-});
+
   	
   	
 }

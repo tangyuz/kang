@@ -6,7 +6,7 @@ $(".footer").load("footer.html",function(){
 })
 
    
-$(".slideBox").slide({
+	$(".slideBox").slide({
 	mainCell: ".bd ul",
 	autoPlay: true
 	});
@@ -39,15 +39,7 @@ $(".slideBox").slide({
   }
   
   
-  if(/news/.test(location.href)){
-  	$("#header").load("head.html",function(){
-  		
-  	})
-  	
-  	$(".footer").load("footer.html",function(){
-  		
-  	})
-  }
+ 
   
   
   if(/consu/.test(location.href)){
@@ -130,6 +122,20 @@ $(function() {
   }
   
   if(/news/.test(location.href)){
+  	
+  	$("#header").load("head.html",function(){
+  		
+  	})
+  	
+  	$(".footer").load("footer.html",function(){
+  		
+  	})
+  	
+  	
+  	$(".slideBox_new").slide({
+	mainCell: ".bd ul",
+	autoPlay: true
+	});
   	$.ajax(
 				{
 					type:"get",
@@ -140,7 +146,7 @@ $(function() {
 						var data=mag.data;
 						var str='';
 						for(var i in data){
-							str+='<li><a href="javascript:;" dataid="'+data[i].id+'">'+data[i].name+'</a><span>'+data[i].time+'</span></li>'
+							str+='<li><a class="eliplis" href="javascript:;" dataid="'+data[i].id+'">'+data[i].name+'</a><span>'+data[i].time+'</span></li>'
 							
 							
 							

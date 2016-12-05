@@ -364,7 +364,7 @@ a img{
   padding-left: 10px;
   line-height: 30px;
   background: url(../images/dian.png) left center no-repeat;
-  width:540px;
+  width:530px;
   text-overflow:ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -518,47 +518,111 @@ a img{
 	width:100%;
 	
 }
-.new_banner{
+.new_banner img{
 	width:100%;
 	height:221px;
 	margin:0 auto;
 	display: block;
 }
-.xinwen{
-	height:156px;
+
+
+
+
+.slideBox_new {
+  margin:auto;
+  height: 293px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
 }
 
-.xinwen p{
-	margin-left:5px;
-	font-size:16px;
-	height:156px;
-	line-height:156px;
-	color:#004679;
+.slideBox_new .hd{
+  height: 32px;
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  width: 100%;
 }
-.new_right{
-	width:550px;
-	height:240px;
-	padding-top:25px;
+.slideBox_new .hd ul {
+  overflow: hidden;
+  zoom: 1;
+  float: right;
+}
+
+.slideBox_new .hd ul li {
+  float: left;
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius:50%;
+  background:#d8d8d8;
+}
+
+.slideBox_new .hd ul li.on {
+  border: 1px solid #fff;
+  background: #888;
+}
+
+.slideBox_new .bd {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+
+.slideBox_new .bd li {
+  zoom: 1;
+  vertical-align: middle;
+  width:1000px;
+  height:292px;
+}
+
+.slideBox_new .bd img {
+  width:388px;
+  height: 227px;
+  display: block;
+}
+
+.slideBox_new .bd  .new_pic{
+	width:440px;
 	padding-left:15px;
+	
 }
 
-.new_right .bold{
+.slideBox_new .bd  .new_title{
+	width:530px;
+	padding-right:15px;
+	
+}
+
+.slideBox_new .bd  .new_title .bold{
 	font-weight: bold;
 	font-size:24px;
 	color:#587fba;
 }
 
-.new_right .wen{
+
+
+.slideBox_new .bd  .new_title .wen{
 	font-size:16px;
 	line-height: 26px;
 	width:477px;
 	text-align:justify;
 	margin-left:30px;
 	font-family: verdana;
+	height:140px;
 	color:#444;
+	
 }
 .List{
-	height:550px;
+	height:600px;
+	border-top:1px solid #6490b3;
+	padding-top:44px;
+	margin-top:20px;
 }
 
 .List .ul1 li {
@@ -575,6 +639,10 @@ a img{
 	font-size: 16px;
 	display: block;
 	float:left;
+	width:540px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .List .ul1 li span{
 	float:right;

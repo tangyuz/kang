@@ -1,32 +1,32 @@
 
 	
 	alert(1)
-//		$("#header").load("head.html",function(){
-//			})
-//	
-//	  	$(".footer").load("footer.html",function(){
-//	  	})
-//	
-// 
-//	$(".slideBox").slide({
-//  	mainCell: ".bd ul",
-//  	autoPlay: true
-//		});
-//		$(".focusBox").slide({
-//		    titCell: ".num li",
-//		    mainCell: ".pic",
-//		    effect: "fold",
-//		    autoPlay: true,
-//		    trigger: "click",
-//		    startFun: function(i) {
-//		        $(".focusBox .txts li").eq(i).animate({
-//		            "bottom": 0
-//		        }).siblings().animate({
-//		            "bottom": -36
-//		        });
-//		    }
-//		});
-//	
+		$("#header").load("head.html",function(){
+			})
+	
+	  	$(".footer").load("footer.html",function(){
+	  	})
+	
+   
+	$(".slideBox").slide({
+    	mainCell: ".bd ul",
+    	autoPlay: true
+		});
+		$(".focusBox").slide({
+		    titCell: ".num li",
+		    mainCell: ".pic",
+		    effect: "fold",
+		    autoPlay: true,
+		    trigger: "click",
+		    startFun: function(i) {
+		        $(".focusBox .txts li").eq(i).animate({
+		            "bottom": 0
+		        }).siblings().animate({
+		            "bottom": -36
+		        });
+		    }
+		});
+	
 		
 
   

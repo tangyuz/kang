@@ -12,14 +12,14 @@ $(document).ready(function(){
     	mainCell: ".bd ul",
     	autoPlay: true
 		});
-		jQuery(".focusBox").slide({
+		$(".focusBox").slide({
 		    titCell: ".num li",
 		    mainCell: ".pic",
 		    effect: "fold",
 		    autoPlay: true,
 		    trigger: "click",
 		    startFun: function(i) {
-		        jQuery(".focusBox .txts li").eq(i).animate({
+		        $(".focusBox .txts li").eq(i).animate({
 		            "bottom": 0
 		        }).siblings().animate({
 		            "bottom": -36

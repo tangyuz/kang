@@ -1,5 +1,5 @@
-$(document).ready(function(){
-	if(/index/.test(location.href)){
+
+	
 	alert(1)
 //		$("#header").load("head.html",function(){
 //			})
@@ -28,7 +28,7 @@ $(document).ready(function(){
 //		});
 //	
 		
-}
+
   
   if(/aboutus/.test(location.href)){
   	$("#header").load("head.html",function(){
@@ -131,7 +131,7 @@ $(function() {
   	})
   }
 
-})
+
 	
 	 
   

@@ -900,8 +900,12 @@ a img{
 
 
 .rem_about .photo dl{
-	margin-left: 50px;
-	height:297px;
+	margin-left: 80px;
+	height:300px;
+	width:400px;
+}
+.rem_about .photo dl img{
+	width:400px;
 }
 
 .rem_about .photo dl dd{

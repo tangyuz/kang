@@ -578,10 +578,10 @@ a img{
   height: 32px;
   overflow: hidden;
   position: absolute;
-  right: 0px;
+  right: 10px;
   bottom: 0px;
   z-index: 1;
-  width: 100%;
+  width: 990px;
 }
 .slideBox_new .hd ul {
   overflow: hidden;
@@ -658,6 +658,9 @@ a img{
 }
 .List{
 	height:600px;
+	width:980px;
+	padding:0 10px;
+	margin:0 auto;
 	border-top:1px solid #6490b3;
 	padding-top:44px;
 	margin-top:20px;
